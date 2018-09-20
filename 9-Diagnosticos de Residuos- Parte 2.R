@@ -74,6 +74,6 @@ variacao_PIB <- as.data.frame(variacao_PIB[,-1])                                
 
 #Executando os Teste ARCH-LM
       
-AR1_VAR <- arima(variacao_PIB,c(1,0,0))
-AR2_VAR <- arima(variacao_PIB,c(2,0,0))
+AR1_VAR <- arima(JOCCI$dy,c(1,0,0))
+AR2_VAR <- arima(JOCCI$dy,c(2,0,0))
 arch.test(AR1_VAR)
